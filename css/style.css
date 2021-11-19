@@ -415,6 +415,7 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: 700;
   line-height: 18px;
 }
 
@@ -510,7 +511,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .container {
     max-width: 700px;
     width: 92%;
@@ -523,15 +524,12 @@ template {
   }
 }
 
-@media (max-width: 685px) {
+@media (max-width: 734px) {
   .navbar__search {
     margin-left: auto;
   }
   .navbar-menu {
     padding: 23px 0;
-  }
-  .search {
-    height: 30px;
   }
   .search__input {
     width: 300px;
@@ -542,19 +540,6 @@ template {
 }
 
 @media (max-width: 640px) {
-  .navbar-menu {
-    padding: 15px 0;
-  }
-  .navbar-menu__link {
-    font-size: 10px;
-    line-height: 15px;
-  }
-  .search__input {
-    width: 250px;
-  }
-}
-
-@media (max-width: 590px) {
   .logo {
     width: 99px;
   }
