@@ -527,14 +527,40 @@ template {
   .navbar__search {
     margin-left: auto;
   }
+  .navbar-menu {
+    padding: 23px 0;
+  }
+  .search {
+    height: 30px;
+  }
   .search__input {
     width: 300px;
   }
+  .user__name {
+    margin-left: 8px;
+  }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 640px) {
+  .navbar-menu {
+    padding: 15px 0;
+  }
+  .navbar-menu__link {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .search__input {
+    width: 250px;
+  }
+}
+
+@media (max-width: 590px) {
   .logo {
     width: 99px;
+  }
+  .navbar-top {
+    padding-top: 22px;
+    padding-bottom: 30px;
   }
   .navbar__search, .navbar__user, .navbar-menu {
     display: none;
@@ -571,10 +597,6 @@ template {
 @media (max-width: 480px) {
   .container {
     width: 87%;
-  }
-  .navbar-top {
-    padding-top: 28px;
-    padding-bottom: 28px;
   }
 }
 /*# sourceMappingURL=style.css.map */
