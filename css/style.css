@@ -516,8 +516,11 @@ template {
     max-width: 700px;
     width: 92%;
   }
+  .navbar-top {
+    padding-top: 31px;
+  }
   .navbar-menu {
-    padding: 23px 13px;
+    padding: 20px 15px 22px 14px;
   }
   .navbar__search {
     margin-left: 48px;
@@ -539,7 +542,7 @@ template {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 660px) {
   .logo {
     width: 99px;
   }
