@@ -11,8 +11,6 @@
         &-top
             padding-top: 30px
             padding-bottom: 30px
-        &__search
-            margin-left: 48px
         &-menu
             padding-top: 20px
             padding-bottom: 20px
@@ -24,13 +22,29 @@
             width: 340px
 @media (max-width: 768px)
     .container
-        max-width: 576px
+        max-width: 700px
         width: 92%
+    .navbar
+        &-menu
+            padding: 23px 13px
+        &__search
+            margin-left: 48px
+@media (max-width: 685px)
+    .navbar
+        &__search
+            margin-left: auto
+    .search
+        &__input
+            width: 300px
+@media (max-width: 620px)
+    .logo
+        width: 99px
     .navbar
         &__search, &__user, &-menu
             display: none
     .menu
         &-button
+            align-self: flex-end
             display: flex
             width: 16px
             height: 11px
@@ -44,10 +58,6 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
-@media (max-width: 576px)
-    .logo
-        width: 99px
-
 @media (max-width: 480px)
     .container
         width: 87%
