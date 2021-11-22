@@ -31,7 +31,10 @@
             padding: 20px 15px 22px 14px
         &__search
             margin-left: 48px
-
+    .slider
+        max-width: 700px
+        &-button
+            width: 29px
 @media (max-width: 734px)
     .navbar
         &__search
@@ -69,6 +72,9 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .swiper
+        &-container
+            height: 350px
 @media (max-width: 576px)
     .stars
         flex-basis: 25%
@@ -98,6 +104,18 @@
         &-info
             &__name
                 margin-top: 9px
-
     .stars
         flex-basis: 23%
+    .slider
+        width: 100%
+        padding-top: 18px
+        &-button
+            width: 11px
+            height: 11px
+            &--next
+                right: 6px
+            &--prev
+                left: 6px
+    .swiper
+        &-container
+            height: 179px
