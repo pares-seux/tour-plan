@@ -568,19 +568,15 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   line-height: 0;
-  width: 48px;
+}
+
+.stars-container {
+  max-width: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.stars__star {
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-}
-
-.stars__star:not(:last-child) {
-  margin-right: 3px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .offer {
