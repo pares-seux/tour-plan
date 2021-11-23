@@ -528,8 +528,8 @@ template {
 }
 
 .hotel-info__offer {
-  margin-left: 14px;
-  margin-top: 4px;
+  margin-left: 12px;
+  margin-top: 3px;
 }
 
 .hotel-info__name {
@@ -619,6 +619,8 @@ template {
 .swiper-slide__img {
   width: inherit;
   height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-container {
@@ -628,7 +630,7 @@ template {
   border-radius: 8px;
 }
 
-.swiper:after {
+.swiper-container:after {
   content: '';
   position: absolute;
   top: 0;
