@@ -564,6 +564,12 @@ template {
   line-height: 15px;
 }
 
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -672,6 +678,15 @@ template {
 .slider-button--prev {
   left: 18px;
   background-image: url("../img/arrow-prev.svg");
+}
+
+.booking {
+  background-color: #0A223D;
+  color: #ffffff;
+  border-radius: 8px;
+  max-width: 350px;
+  min-height: 210px;
+  padding: 29px 29px 26px 26px;
 }
 
 @media (max-width: 1200px) {
