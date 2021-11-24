@@ -823,6 +823,7 @@ template {
 .map {
   width: 347px;
   height: 213px;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
