@@ -22,13 +22,19 @@ function init () {
   }, {
     searchControlProvider: 'yandex#search'
   });
-
-var myGeoObject = new ymaps.GeoObject ({
+  
+  var myGeoObject = new ymaps.GeoObject ({
     geometry: {
       type: "Point",
       coordinates: [7.890759, 98.294690]
+    },
+    properties: {
+      hintContent: "Grand Hilton Hotel"
     }
+  }, {
+    preset: "island#redDotIcon",
+    draggable: false
   });
 
- myMap.GeoObject.add(myGeoObject); 
+  myMap.geoObjects.add(myGeoObject);
 };
