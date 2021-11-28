@@ -35,14 +35,14 @@
       line-height: 45px
       text-transform: uppercase
 .subscribe
-  position: relative
-  width: 351px
+  display: flex
+  min-width: 351px
+  max-width: 451px
   height: 55px
   border-radius: 4px
   overflow: hidden
   &__input
-    position: absolute
-    width: 100%
+    width: 285px
     height: 100%
     border: none
     padding-left: 33px
@@ -51,9 +51,6 @@
     font-weight: 300
     line-height: 18px
   &__button
-    position: absolute
-    right: 0
-    top: 0
     height: 100%
     border: none
     background-color: $primary

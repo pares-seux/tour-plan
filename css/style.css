@@ -893,16 +893,18 @@ template {
 }
 
 .subscribe {
-  position: relative;
-  width: 351px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 351px;
+  max-width: 451px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .subscribe__input {
-  position: absolute;
-  width: 100%;
+  width: 285px;
   height: 100%;
   border: none;
   padding-left: 33px;
@@ -913,9 +915,6 @@ template {
 }
 
 .subscribe__button {
-  position: absolute;
-  right: 0;
-  top: 0;
   height: 100%;
   border: none;
   background-color: #EC1F46;
@@ -936,6 +935,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 70px;
 }
 
@@ -958,7 +958,7 @@ template {
           align-items: center;
   max-width: 730px;
   margin: 45px auto 0;
-  padding: 0 98px 30px 96px;
+  padding: 0 98px 27px 97px;
   background-color: #ffffff;
   border-radius: 8px;
 }
@@ -987,7 +987,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 99;
@@ -1002,12 +1002,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 18px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 0;
+  right: 20px;
 }
 
 .reviews-slider__profile {
@@ -1022,7 +1022,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .reviews-slider__avatar {
@@ -1039,6 +1039,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -1052,8 +1053,9 @@ template {
 .reviews-slider__text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 160%;
+  line-height: 19px;
   text-align: justify;
+  word-spacing: 1px;
 }
 
 @media (max-width: 1200px) {
@@ -1108,8 +1110,26 @@ template {
   .newsletter-wrapper {
     max-width: 700px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
   .reviews-slider__item {
-    max-width: 580px;
+    max-width: 579px;
+    padding: 0 60px 30px 64px;
+  }
+  .reviews-slider__item::before, .reviews-slider__item::after {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 43.5%;
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
+  .reviews-slider__button--next {
+    right: 0;
   }
 }
 
@@ -1197,9 +1217,6 @@ template {
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
-  }
-  .reviews-slider__item::before, .reviews-slider__item::after {
-    display: none;
   }
   .reviews-slider__button {
     top: 32px;
