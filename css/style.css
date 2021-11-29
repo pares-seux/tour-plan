@@ -941,7 +941,6 @@ template {
 
 .reviews-slider {
   position: relative;
-  width: inherit;
 }
 
 .reviews-slider__item {
@@ -958,7 +957,7 @@ template {
           align-items: center;
   max-width: 730px;
   margin: 45px auto 0;
-  padding: 0 98px 27px 97px;
+  padding: 0 98px 27px 98px;
   background-color: #ffffff;
   border-radius: 8px;
 }
@@ -1117,19 +1116,22 @@ template {
   }
   .reviews-slider__item {
     max-width: 579px;
-    padding: 0 60px 30px 64px;
+    padding: 0 60px 18px 64px;
   }
   .reviews-slider__item::before, .reviews-slider__item::after {
     display: none;
   }
   .reviews-slider__button {
-    top: 43.5%;
+    top: 45%;
   }
   .reviews-slider__button--prev {
     left: 0;
   }
   .reviews-slider__button--next {
     right: 0;
+  }
+  .reviews-slider__profile {
+    margin-bottom: 20px;
   }
 }
 
@@ -1176,7 +1178,7 @@ template {
     height: 210px;
   }
   .newsletter {
-    padding: 72px 0;
+    padding: 72px 0 74px;
   }
   .newsletter-wrapper {
     width: 92%;
@@ -1219,17 +1221,17 @@ template {
     padding: 0 30px 30px;
   }
   .reviews-slider__button {
-    top: 32px;
+    top: 30px;
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -65px;
+    margin-left: -94px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -65px;
+    margin-right: -86px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
@@ -1317,6 +1319,14 @@ template {
   .map {
     width: 100%;
   }
+  .subscribe {
+    min-width: 280px;
+    max-width: 300px;
+  }
+  .subscribe__input {
+    width: 214px;
+    padding-right: 55px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1371,7 +1381,7 @@ template {
     height: 173px;
   }
   .newsletter {
-    padding: 57px 0 83px 0;
+    padding: 58px 0 83px 0;
   }
   .newsletter-wrapper {
     width: 87.5%;
@@ -1393,6 +1403,20 @@ template {
   }
   .subscribe__input {
     padding-left: 19px;
+  }
+  .reviews__title {
+    width: 228px;
+    margin: 0 auto 42px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .reviews-slider__item {
+    padding-right: 29px;
+    padding-bottom: 26px;
+  }
+  .reviews-slider__text {
+    text-align: start;
+    word-spacing: 0.5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
