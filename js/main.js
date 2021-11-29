@@ -28,13 +28,18 @@ const reviewSlider = new Swiper('.reviews-slider', {
 });
 
 const newsLetter = document.getElementsByClassName('newsletter__parallax')[0];
-var showsHeight = document.body.scrollHeight - window.innerHeight;
-  
-
+ 
 
 function moveBg(e) {
-  var position = (window.pageYOffset/(showsHeight))*70;
-  newsLetter.style.backgroundPositionY = position + '%';
+  newsLetterHeight = newsLetter.getBoundingClientRect().height;
+  heightScroll = window.innerHeight + newsLetterHeight - 40;
+  newsLetterTop = newsLetter.getBoundingClientRect().top;
+  blockPosition = newsLetterTop + newsLetterHeight - 40;
+
+  if ((newsLetterTop-window.innerHeight<=0) && (newsLetterTop+newsLetterHeight>=0)) {
+    newsLetter.style.backgroundPositionY = ((60-0.6*100) + (blockPosition/heightScroll)*100*0.6) + '%'; }
+    console.log(newsLetter.style.backgroundPositionY);
+
 };
 
 document.addEventListener('scroll', moveBg);
