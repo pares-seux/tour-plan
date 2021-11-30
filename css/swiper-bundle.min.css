@@ -514,10 +514,12 @@ button.swiper-pagination-bullet {
 }
 .swiper-fade .swiper-slide .swiper-slide {
   pointer-events: none;
+  display: none;
 }
 .swiper-fade .swiper-slide-active,
 .swiper-fade .swiper-slide-active .swiper-slide-active {
   pointer-events: auto;
+  display: visible;
 }
 .swiper-cube {
   overflow: visible;
@@ -547,7 +549,7 @@ button.swiper-pagination-bullet {
 .swiper-cube .swiper-slide-next + .swiper-slide,
 .swiper-cube .swiper-slide-prev {
   pointer-events: auto;
-  visibility: visible;
+  visibility: hidden;
 }
 .swiper-cube .swiper-slide-shadow-bottom,
 .swiper-cube .swiper-slide-shadow-left,
