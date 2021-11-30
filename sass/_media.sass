@@ -4,9 +4,10 @@
     .hotel
         &-slider
             width: 590px
-    .card
-        width: 230px
-        height: 230px
+    .activities
+        &__card
+            width: 230px
+            height: 230px
 @media (max-width: 992px)
     .container
         max-width: 760px
@@ -38,6 +39,7 @@
         &-wrapper
             max-width: 700px
     .reviews
+        padding-bottom: 120px
         &__title
             font-size: 30px
             line-height: 38px
@@ -45,6 +47,7 @@
         &-slider
             &__item
                 max-width: 579px
+                margin-top: 45px
                 padding: 0 60px 18px 64px
                 &::before, &::after
                     display: none
@@ -56,9 +59,17 @@
                     right: 0
             &__profile
                 margin-bottom: 20px
-    .card
-        width: 24%
-        height: 200px
+    .activities
+        padding-top: 0
+        &-wrapper
+            width: calc(100%+20px)
+            justify-content: center
+            margin: -10px
+        &__card
+            margin: 10px
+            flex-grow: 1
+            width: calc(25%-80px)
+
 @media (max-width: 820px)
     .container
         max-width: 700px
@@ -95,19 +106,12 @@
             width: 92%
             align-items: center
     .activities
-        padding-top: 50px
         &-wrapper
             flex-wrap: wrap
         &__card
-            margin-bottom: 20px
+            width: calc(50%-40px)
     .card
-        width: 339px
-        height: 255px
-        padding-right: 132px
-        &:first-child
-            padding-right: 160px
-        &:last-child
-            padding-right: 112px
+        padding-right: 112px
 @media (max-width: 750px)
     .navbar
         &__search
@@ -130,10 +134,10 @@
             width: 92%
             align-items: flex-start
     .reviews
+        padding-bottom: 90px
         &-slider
             &__item
                 padding: 0 30px 30px
-
             &__button
                 top: 30px
                 &--prev
@@ -144,13 +148,8 @@
                     right: 50%
                     margin-right: -86px
                     transform: translate(50%, 0)
-    .activities
-        &__card
-            margin-bottom: 15px
     .card
-        width: 49%
-        &:nth-child(n)
-            padding-right: 25px
+        padding-right: 98px
 @media (max-width: 660px)
     .logo
         width: 99px
@@ -179,9 +178,12 @@
     .hotel
         &-slider
             height: 350px
+
     .activities
         padding-top: 40px
         padding-bottom: 60px
+    .card
+        padding-right: 32px
 @media (max-width: 576px)
     .stars
         flex-basis: 25%
@@ -292,14 +294,11 @@
         width: 100%
         margin-bottom: 20px
         &:nth-child(1)
-            padding-right: 98px
             order: 1
         &:nth-child(2)
-            padding-right: 89px
             order: 3
         &:nth-child(3)
             margin-bottom: 28px
-            padding-right: 89px
             order: 2
         &:nth-child(4)
             order: 4
