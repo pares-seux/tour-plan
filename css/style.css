@@ -943,6 +943,7 @@ template {
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .reviews-slider {
@@ -962,7 +963,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   max-width: 730px;
-  margin: 45px auto 0;
+  margin: 115px auto 0;
   padding: 0 98px 16px 98px;
   background-color: #ffffff;
 }
@@ -1063,7 +1064,7 @@ template {
 }
 
 .activities {
-  padding: 21px 0 98px 0;
+  padding: 60px 0 98px 0;
 }
 
 .activities__title {
