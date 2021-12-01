@@ -1,0 +1,67 @@
+.packages
+  padding: 40px 0 70px
+  &__title
+    margin-top: 0
+    margin-bottom: 65px
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 30px
+.package
+  display: grid
+  grid-template-rows: 250px 250px
+  border-radius: 8px
+  overflow: hidden
+  &--active
+    grid-column: span 2
+    grid-template-rows: 1fr
+    grid-template-columns: 1fr 1fr
+  &-image
+    position: relative
+    &__img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__offer
+      position: absolute
+      top: 26px
+      left: 0
+      &--active
+        font-size: 12px
+        line-height: 15px
+  &-info
+    padding: 30px 21px 25px 32px
+    background-color: $dark
+    color: $light
+    &__rating
+      display: none
+      margin-bottom: 5px
+      &--active
+        display: contents
+    &__title
+      margin-top: 0
+      margin-bottom: 27px
+      font-weight: 700
+      font-size: 18px
+      line-height: 23px
+    &__description
+      display: none
+      font-weight: 400
+      font-size: 12px
+      line-height: 22px
+      text-align: justify
+      &--active
+        display: contents
+    &__text
+      display: flex
+      align-items: center
+
+      margin-bottom: 8px
+      font-weight: 400
+      font-size: 12px
+      line-height: 16px

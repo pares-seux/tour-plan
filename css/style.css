@@ -20,6 +20,9 @@ img {
 
 .button {
   cursor: pointer;
+  border: none;
+  background-color: #EC1F46;
+  color: #ffffff;
 }
 
 .stars {
@@ -35,6 +38,16 @@ img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.offer {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 13px;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  border-radius: 3px;
+  color: #ffffff;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -469,8 +482,6 @@ template {
   right: 0;
   width: 65px;
   height: 100%;
-  border: none;
-  background-color: #EC1F46;
 }
 
 .user {
@@ -663,16 +674,6 @@ template {
      object-fit: cover;
 }
 
-.offer {
-  font-size: 10px;
-  font-weight: 600;
-  line-height: 13px;
-  padding: 4px 9px;
-  background-color: #EC1F46;
-  border-radius: 3px;
-  color: #ffffff;
-}
-
 .rating {
   max-width: 65px;
   min-height: 45px;
@@ -815,13 +816,10 @@ template {
 .booking__button {
   width: 100%;
   min-height: 45px;
-  color: #ffffff;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
   border-radius: 4px;
-  border: none;
-  background-color: #EC1F46;
 }
 
 .map {
@@ -829,6 +827,115 @@ template {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.packages {
+  padding: 40px 0 70px;
+}
+
+.packages__title {
+  margin-top: 0;
+  margin-bottom: 65px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.package {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 250px 250px;
+      grid-template-rows: 250px 250px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.package--active {
+  grid-column: span 2;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.package-image {
+  position: relative;
+}
+
+.package-image__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.package-image__offer {
+  position: absolute;
+  top: 26px;
+  left: 0;
+}
+
+.package-image__offer--active {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.package-info {
+  padding: 30px 21px 25px 32px;
+  background-color: #0A223D;
+  color: #ffffff;
+}
+
+.package-info__rating {
+  display: none;
+  margin-bottom: 5px;
+}
+
+.package-info__rating--active {
+  display: contents;
+}
+
+.package-info__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.package-info__description {
+  display: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.package-info__description--active {
+  display: contents;
+}
+
+.package-info__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .newsletter {
@@ -923,9 +1030,6 @@ template {
 
 .subscribe__button {
   height: 100%;
-  border: none;
-  background-color: #EC1F46;
-  color: #ffffff;
   min-width: 66px;
   font-size: 12px;
   font-weight: 700;
@@ -1064,7 +1168,7 @@ template {
 }
 
 .activities {
-  padding: 21px 0 98px 0;
+  padding: 40px 0 98px 0;
 }
 
 .activities__title {
@@ -1141,13 +1245,10 @@ template {
 
 .card__button {
   font-family: 'Nunito', sans-serif;
-  color: #ffffff;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   padding: 7px 22px 7px 21px;
-  background-color: #EC1F46;
-  border: none;
   border-radius: 4px;
 }
 
@@ -1412,7 +1513,7 @@ template {
     padding-bottom: 60px;
   }
   .card {
-    padding-right: 46px;
+    padding-right: 36px;
   }
 }
 
