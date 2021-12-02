@@ -71,6 +71,11 @@
             width: calc(50%-20px)
             width: 46%
             height: 255px
+    .packages
+        &__title
+            font-size: 30px
+        &-wrapper
+            grid-template-columns: 1fr 1fr
 @media (max-width: 820px)
     .container
         max-width: 700px
@@ -178,6 +183,21 @@
         padding-bottom: 60px
     .card
         padding-right: 36px
+    .package
+        &-info
+            &__description
+                font-size: 12px
+            &__footer
+                flex-direction: column
+            &__priceblock
+                flex-direction: row
+                justify-content: end
+                align-items: center
+                margin-bottom: 12px
+            &__pricetag
+                margin-right: 15px
+            &__button
+                width: 100%
 @media (max-width: 576px)
     .stars
         flex-basis: 25%
@@ -211,6 +231,20 @@
             padding-right: 55px
     .card
         padding-right: 36px
+    .packages
+        &-wrapper
+            grid-template-columns: 1fr
+    .package
+        &--active
+            grid-column: 1
+        &-card
+            grid: 200px auto / 1fr
+            &--active
+                grid: 250px auto / 1fr
+        &-info
+            padding: 29px 21px 26px 22px
+            &--active
+                padding: 29px 21px 26px 22px
 @media (max-width: 480px)
     .container
         width: 87%
