@@ -1,5 +1,5 @@
 .packages
-  padding: 40px 0 70px
+  padding: 39px 0 70px
   &__title
     margin-top: 0
     margin-bottom: 65px
@@ -13,16 +13,23 @@
     grid-template-columns: 1fr 1fr 1fr
     grid-gap: 30px
 .package
-  display: grid
-  grid-template-rows: 250px 250px
-  border-radius: 8px
-  overflow: hidden
+
   &--active
     grid-column: span 2
-    grid-template-rows: 1fr
-    grid-template-columns: 1fr 1fr
+
+  &-card
+    min-height: 500px
+    display: grid
+    grid: 250px auto / 1fr
+    border-radius: 8px
+    overflow: hidden
+    &--active
+      grid: auto / 1fr 1fr
   &-image
     position: relative
+
+    &--active
+
     &__img
       width: 100%
       height: 100%
@@ -31,37 +38,78 @@
       position: absolute
       top: 26px
       left: 0
+      padding: 4px 9px
+      font-size: 8px
       &--active
         font-size: 12px
         line-height: 15px
+        padding: 8px 20px 7px 11px
   &-info
-    padding: 30px 21px 25px 32px
+
+    padding: 30px 22px 25px 30px
     background-color: $dark
     color: $light
+    &--active
+
+      padding-top: 46px
+      padding-left: 44px
+      padding-bottom: 29px
     &__rating
       display: none
-      margin-bottom: 5px
       &--active
-        display: contents
+        display: block
+        padding-bottom: 5px
     &__title
       margin-top: 0
-      margin-bottom: 27px
+      margin-bottom: 22px
       font-weight: 700
       font-size: 18px
       line-height: 23px
     &__description
       display: none
       font-weight: 400
-      font-size: 12px
-      line-height: 22px
+      font-size: 14px
+      line-height: 160.6%
       text-align: justify
       &--active
-        display: contents
+        display: block
+        padding-top: 4px
+        margin-bottom: 42px
+    &__booking
+      margin-bottom: 22px
+      &--active
+        margin-bottom: 34px
     &__text
       display: flex
       align-items: center
-
-      margin-bottom: 8px
       font-weight: 400
       font-size: 12px
       line-height: 16px
+      &:not(:last-child)
+        margin-bottom: 11px
+    &__icon
+      margin-right: 14px
+    &__footer
+      display: flex
+      justify-content: space-between
+    &__priceblock
+      display: flex
+      flex-flow: column
+    &__pricetag
+      font-weight: 400
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+      margin-bottom: 5px
+    &__saletag
+      font-weight: 700
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 5px
+    &__button
+      align-self: end
+      padding: 11px 27px 10px 26px
+      border-radius: 4px
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
