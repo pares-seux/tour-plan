@@ -1387,7 +1387,7 @@ template {
     max-width: 700px;
   }
   .reviews {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
   .reviews__title {
     font-size: 30px;
@@ -1415,7 +1415,7 @@ template {
     margin-bottom: 20px;
   }
   .activities {
-    padding-top: 0;
+    padding-top: 60;
   }
   .activities-wrapper {
     width: calc(100%+20px);
