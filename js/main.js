@@ -30,7 +30,6 @@ const reviewSlider = new Swiper('.reviews-slider', {
 
 const newsLetter = document.getElementsByClassName('newsletter__parallax')[0];
  
-
 function moveBg(e) {
   newsLetterHeight = newsLetter.getBoundingClientRect().height;
   heightScroll = window.innerHeight + newsLetterHeight - 40;
@@ -44,5 +43,28 @@ function moveBg(e) {
 };
 
 document.addEventListener('scroll', moveBg);
+
+var packagesWrapper = document.getElementsByClassName('packages-wrapper')[0];
+
+packagesWrapper.addEventListener('mouseover', function(e) {
+  var target = e.target;
+  while (!target.classList.contains('package')) {
+    target = target.parentNode;
+  };
+
+  console.log(target);
+  if (!target.classList.contains('package--active')) {
+    removeActiveClass();
+  };
+  
+});
+
+function removeActiveClass() {
+  var oldActiveElement = document.getElementsByClassName('package--active')[0];
+
+  
+  oldActiveElement.childNodes.forEach(element => element.classList.contains("*--active"));
+//  oldActiveElement.classList.remove('package--active');
+};
 
 

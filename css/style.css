@@ -939,6 +939,7 @@ template {
 
 .package-info__description--active {
   display: block;
+  margin-botton: 4px;
   padding-top: 4px;
 }
 
@@ -1246,7 +1247,7 @@ template {
 }
 
 .activities {
-  padding: 40px 0 98px 0;
+  padding: 60px 0 98px 0;
 }
 
 .activities__title {
@@ -1413,9 +1414,6 @@ template {
   }
   .reviews-slider__profile {
     margin-bottom: 20px;
-  }
-  .activities {
-    padding-top: 60px;
   }
   .activities-wrapper {
     width: calc(100%+20px);
