@@ -865,7 +865,7 @@ template {
 }
 
 .package-card--active {
-  grid: auto / 1fr 1fr;
+  grid: 500px / 1fr 1fr;
 }
 
 .package-image {
@@ -1387,7 +1387,7 @@ template {
     max-width: 700px;
   }
   .reviews {
-    padding-bottom: 60px;
+    padding-bottom: 120px;
   }
   .reviews__title {
     font-size: 30px;
@@ -1415,7 +1415,7 @@ template {
     margin-bottom: 20px;
   }
   .activities {
-    padding-top: 60;
+    padding-top: 60px;
   }
   .activities-wrapper {
     width: calc(100%+20px);
