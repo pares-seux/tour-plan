@@ -466,7 +466,6 @@ template {
 .search__input {
   width: 350px;
   height: 100%;
-  margin-left: 7px;
   padding-left: 23px;
   padding-right: 75px;
   background-color: #F5FAFE;
@@ -894,7 +893,7 @@ template {
 }
 
 .package-info {
-  padding: 30px 22px 25px 30px;
+  padding: 30px 22px 25px 32px;
   background-color: #0A223D;
   color: #ffffff;
 }
@@ -924,9 +923,10 @@ template {
 
 .package-info__description {
   display: none;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 160.6%;
+  line-height: 22.48px;
   text-align: justify;
   height: 199px;
   overflow: scroll;
@@ -939,7 +939,7 @@ template {
 
 .package-info__description--active {
   display: block;
-  margin-botton: 4px;
+  margin-bottom: 6px;
   padding-top: 4px;
 }
 
@@ -969,6 +969,10 @@ template {
 
 .package-info__icon {
   margin-right: 14px;
+}
+
+.package-info__icon--active {
+  margin-left: 2px;
 }
 
 .package-info__footer {
