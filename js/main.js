@@ -46,6 +46,12 @@ document.addEventListener('scroll', moveBg);
 
 var packagesWrapper = document.getElementsByClassName('packages-wrapper')[0];
 
+var menuButton = document.querySelector('.menu-button');
+menuButton.addEventListener('click', function() {
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+});
+
+/*
 packagesWrapper.addEventListener('mouseover', function(e) {
   var target = e.target;
   while (!target.classList.contains('package')) {
@@ -65,6 +71,6 @@ function removeActiveClass() {
   
   oldActiveElement.childNodes.forEach(element => element.classList.contains("*--active"));
 //  oldActiveElement.classList.remove('package--active');
-};
+};*/
 
 
