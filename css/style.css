@@ -1995,11 +1995,12 @@ template {
             flex-direction: column;
   }
   .navbar-menu__item {
-    line-height: 36px;
+    line-height: 35px;
   }
   .navbar-menu__item--mobile_visible {
     display: block;
-    padding-bottom: 26px;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
   }
   .user__name--light {
     color: #ffffff;
