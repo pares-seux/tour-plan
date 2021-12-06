@@ -1940,7 +1940,7 @@ template {
 
 @media (max-width: 660px) {
   body {
-    padding-top: 89px;
+    padding-top: 70px;
   }
   .logo {
     width: 99px;
@@ -1975,7 +1975,7 @@ template {
     right: 0;
     bottom: 0;
     top: 70px;
-    padding-top: 30px;
+    padding-top: 10px;
   }
   .navbar-bottom--visible {
     display: block;
@@ -1991,11 +1991,15 @@ template {
   }
   .navbar-menu__item--mobile_visible {
     display: block;
+    padding-bottom: 6px;
   }
   .user__name--light {
     color: #ffffff;
     margin-left: 0;
     margin-top: 10px;
+  }
+  .search__input--mobile {
+    width: 243px;
   }
   .menu-button {
     -ms-flex-item-align: end;
