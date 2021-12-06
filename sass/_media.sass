@@ -8,6 +8,12 @@
         &__card
             width: 230px
             height: 230px
+    .footer
+        &__input
+            flex-basis: 100%
+        &__logo
+            grid-row: 1 / 2
+
 @media (max-width: 992px)
     .container
         max-width: 760px
@@ -75,6 +81,35 @@
             font-size: 30px
         &-wrapper
             grid-template-columns: 1fr 1fr
+    .footer
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-row-gap: 40px
+        &__input
+            flex-basis: 49%
+        &__logo
+            grid-column: span 2
+        &__social
+            &-network
+                grid-row: 1 / 2
+                grid-column: span 4
+                align-self: center
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+        &__legal
+            grid-column: span 2
+        &__additional
+            grid-column: span 2
+        &__contact
+            &-details
+                grid-column: span 5
+                grid-row: 3
+            &-form
+                grid-column: span 5
+                grid-row: 4
+        &__payment-list
+            grid-column: 5
 @media (max-width: 820px)
     .container
         max-width: 700px
@@ -110,8 +145,56 @@
         &-wrapper
             width: 92%
             align-items: center
+    .activities
+        padding-bottom: 70px
     .card
         padding-right: 112px
+    .footer
+        padding-top: 73px
+        &-wrapper
+            grid-template-columns: 1fr 1.5fr 1.25fr
+            grid-row-gap: 48px
+            grid-column-gap: 28px
+            grid-auto-columns: minmax(10px, min-content)
+        &__logo
+            width: 96px
+            grid-column: 1
+        &__social
+            &-network
+                grid-column: span 2
+                margin-top: 8px
+                margin-left: -13px
+            &-links
+                margin-top: 4px
+        &__categories
+            grid-column: 1
+            grid-row: 2
+        &__additional
+            grid-column: 2
+            grid-row: 2
+        &__legal
+            grid-column: 3
+            grid-row: 2
+            margin-left: 14px
+        &__contact
+            &-details
+                grid-column: span 3
+                margin-left: 0
+            &-form
+                grid-column: span 3
+                width: 77%
+                margin-top: -8px
+        &__input
+            flex-basis: 47%
+        &__policy-list
+            grid-column: span 2
+            margin-top: 5px
+            align-self: center
+            justify-self: start
+        &__payment-list
+            grid-column: 3
+            margin-top: 5px
+            align-self: center
 @media (max-width: 750px)
     .navbar
         &__search
@@ -150,6 +233,11 @@
                     transform: translate(50%, 0)
     .card
         padding-right: 98px
+    .footer
+        &-wrapper
+            grid-template-columns: 1fr 1fr 1fr
+        &__input
+            flex-basis: 100%
 @media (max-width: 660px)
     .logo
         width: 99px
@@ -196,6 +284,10 @@
             &__pricetag
                 margin-right: 15px
             &__button
+                width: 100%
+    .footer
+        &__contact
+            &-form
                 width: 100%
 @media (max-width: 576px)
     .stars
@@ -244,6 +336,47 @@
             padding: 29px 21px 26px 22px
             &--active
                 padding: 29px 21px 26px 22px
+    .footer
+        padding-top: 69px
+        padding-bottom: 21px
+        &-wrapper
+            grid-template-columns: 1fr
+            grid-row-gap: 30px
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                margin-left: 0
+                grid-row: 2
+                grid-column: 1
+        &__additional
+            grid-row: 4
+            grid-column: 1
+        &__categories
+            grid-row: 5
+            grid-column: 1
+        &__legal
+            margin-left: 0
+            grid-row: 3
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
+        &__policy-list
+            grid-row: 8
+            grid-column: 1
+            align-self: start
+            padding-bottom: 34px
+        &__payment-list
+            grid-row: 8
+            grid-column: 1
+            justify-self: start
+            align-self: end
 @media (max-width: 480px)
     .container
         width: 87%
@@ -330,3 +463,34 @@
             order: 2
         &:nth-child(4)
             order: 4
+    .footer
+        &-wrapper
+            grid-row-gap: 28px
+        &__social
+            &-network
+                flex-wrap: wrap
+            &-links
+                margin-top: 22px
+                margin-left: 2px
+        &__title
+            &--inline
+                margin: 0
+                flex-basis: 100%
+        &__icon
+            &-wrapper
+                margin-left: 2px
+                min-width: 30px
+        &__text
+            margin-bottom: 24px
+        &__contact
+            &-form
+                padding-top: 20px
+        &__form
+            margin-top: -18px
+        &__info
+            flex-basis: 100%
+            margin-bottom: 14px
+        &__message
+            margin-bottom: 14px
+        &__button
+            order: 1
