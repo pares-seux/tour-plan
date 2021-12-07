@@ -1,4 +1,5 @@
-const hotelSlider = new Swiper('.hotel-slider', {
+$(document).ready(function () {
+  const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
   // Navigation arrows
@@ -74,3 +75,40 @@ function removeActiveClass() {
 };*/
 
 
+
+  var modalButton = $('[data-toggle=modal]');
+  modalButton.on('click', openModal);
+  var closeModalButton = $('.modal__close');
+  closeModalButton.on('click', closeModal);
+  var modalWindow = $('.modal__dialog');
+  modalWindow.on('click', function(event) {
+    closeModal(event);
+  });
+
+  $(document).keyup(function(event) {
+     if (event.key === "Escape") { 
+       console.log('нажали');
+       closeModal(event);
+    }
+  });
+
+  function openModal() {
+    var modalOverlay = $('.modal__overlay');
+    var modalDialog = $('.modal__dialog');
+    modalOverlay.addClass('modal__overlay--visible');
+    if ($(window).height() - 50 < modalDialog.height()) {
+      modalDialog.addClass('modal__dialog--overflow');
+    };
+    modalDialog.addClass('modal__dialog--visible');
+  };
+
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $('.modal__overlay');
+    var modalDialog = $('.modal__dialog');
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
+  };
+
+  
+});

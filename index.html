@@ -181,7 +181,7 @@
               </a>
             </div>
             <!-- /.call-center -->
-            <button class="button booking__button">View Other Options</button>
+            <button data-toggle="modal" class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
           <div id="map" class="map">
@@ -248,7 +248,7 @@
                   <span class="package-info__pricetag">$ 10,500</span>
                   <stront class="package-info__saletag">$ 8,500</stront>
                 </div>
-                <button class="button package-info__button">Book Now</button>
+                <button data-toggle="modal" class="button package-info__button">Book Now</button>
               </div>
               <!-- /.package-info__price -->
             </div>
@@ -303,7 +303,7 @@
                       <span class="package-info__pricetag">$ 8,500</span>
                       <stront class="package-info__saletag">$ 3,000</stront>
                     </div>
-                    <button class="button package-info__button">Book Now</button>
+                    <button data-toggle="modal" class="button package-info__button">Book Now</button>
                   </div>
                   <!-- /.package-info__price -->
                 </div>
@@ -359,7 +359,7 @@
                 <span class="package-info__pricetag">$ 10,500</span>
                 <stront class="package-info__saletag">$ 9,500</stront>
               </div>
-              <button class="button package-info__button">Book Now</button>
+              <button data-toggle="modal" class="button package-info__button">Book Now</button>
             </div>
             <!-- /.package-info__footer -->
           </div>
@@ -415,7 +415,7 @@
                   <span class="package-info__pricetag">$ 4,500</span>
                   <stront class="package-info__saletag">$ 2,500</stront>
                 </div>
-                <button class="button package-info__button">Book Now</button>
+                <button data-toggle="modal" class="button package-info__button">Book Now</button>
               </div>
               <!-- /.package-info__price -->
             </div>
@@ -470,7 +470,7 @@
                   <span class="package-info__pricetag">$ 6,500</span>
                   <stront class="package-info__saletag">$ 3,500</stront>
                 </div>
-                <button class="button package-info__button">Book Now</button>
+                <button data-toggle="modal" class="button package-info__button">Book Now</button>
               </div>
               <!-- /.package-info__price -->
             </div>
@@ -600,25 +600,25 @@
         <div class="card activities__card">
           <img src="./img/activities/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-          <button class="button card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- ./card -->
         <div class="card activities__card">
           <img src="./img/activities/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club&nbsp;golf course</h3>
-          <button class="button card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- ./card -->
         <div class="card activities__card">
           <img src="./img/activities/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls&nbsp;hiking trip&nbsp;-&nbsp;full day</h3>
-          <button class="button card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- ./card -->
         <div class="card activities__card">
           <img src="./img/activities/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue&nbsp;marine discovery quest</h3>
-          <button class="button card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- ./card -->
       </div>
@@ -709,7 +709,7 @@
           <form action="send.php" method="POST" class="footer__form">
             <input type="text" name="name" class="input footer__input" placeholder="Your Full Name">
             <input type="text" name="phone" class="input footer__input" placeholder="Phone Number">
-            <textarea name="message" class="footer__message" placeholder="Message"></textarea>
+            <textarea name="message" class="message footer__message" placeholder="Message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -732,6 +732,27 @@
     </div>
     <!-- /.container -->
   </footer>
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close" >
+      </a>
+      <h2 class="modal__title">Booking</h2>
+      <form action="send.php" method="POST" class="modal__form">
+        <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
+        <input type="text" name="phone" class="input modal__input" placeholder="Phone Number*">
+        <input type="email" name="email" class="input modal__input" placeholder="Email*">
+        <textarea name="message" class="message modal__message" placeholder="Message"></textarea>
+        <button class="button modal__button" type="submit">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
