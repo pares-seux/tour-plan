@@ -94,9 +94,6 @@ function removeActiveClass() {
     var modalOverlay = $('.modal__overlay');
     var modalDialog = $('.modal__dialog');
     modalOverlay.addClass('modal__overlay--visible');
-    if ($(window).height() - 50 < modalDialog.height()) {
-      modalDialog.addClass('modal__dialog--overflow');
-    };
     modalDialog.addClass('modal__dialog--visible');
   };
 
