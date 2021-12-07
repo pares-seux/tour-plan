@@ -74,13 +74,11 @@ function removeActiveClass() {
 //  oldActiveElement.classList.remove('package--active');
 };*/
 
-
-
   var modalButton = $('[data-toggle=modal]');
   modalButton.on('click', openModal);
   var closeModalButton = $('.modal__close');
   closeModalButton.on('click', closeModal);
-  var modalWindow = $('.modal__dialog');
+  var modalWindow = $('.modal__overlay');
   modalWindow.on('click', function(event) {
     closeModal(event);
   });
@@ -109,6 +107,23 @@ function removeActiveClass() {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   };
+
+  //обработка форм
+  $(".form").each( function() {
+    $(this).validate({
+      messages: {
+        name: {
+          required: 'Обязательное поле*'
+        },
+        phone: {
+          required: 'Обязательное поле*'
+        },
+        email: {
+          required: 'Обязательное поле*'
+        },
+      },
+    });
+  });
 
   
 });
