@@ -1590,6 +1590,34 @@ template {
   color: #BDBDBD;
 }
 
+.thanks {
+  padding: 20px 20px 52px;
+}
+
+.thanks__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.thanks__description {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 28px;
+}
+
+.thanks__button {
+  padding: 11px 25px 13px;
+  min-height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
