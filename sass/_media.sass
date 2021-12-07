@@ -328,11 +328,41 @@
             &__button
                 width: 100%
     .footer
-        .wrapper
-            grid-template-columns: repeat (2, 1fr)
+        &-wrapper
+            grid-template-columns: 1fr 1fr
+        &__social
+            &-network
+                margin-left: 0
+                grid-column: 2
+                flex-wrap: wrap
+        &__legal
+            grid-column: 2
+            margin-left: 0
         &__contact
+            &-details
+                grid-row: 4
+                grid-column: span 2
             &-form
                 width: 99%
+                grid-row: 5
+                grid-column: span 2
+        &__additional
+            grid-row: 3
+            grid-column: 1
+        &__policy-list
+            grid-row: 6
+            grid-column: 1
+            align-self: start
+            padding-bottom: 34px
+        &__payment-list
+            grid-row: 6
+            grid-column: 1
+            justify-self: start
+            align-self: end
+        &__title
+            &--inline
+                margin: 0
+                flex-basis: 100%
 @media (max-width: 576px)
     .stars
         flex-basis: 25%
@@ -413,14 +443,8 @@
                 grid-column: 1
         &__policy-list
             grid-row: 8
-            grid-column: 1
-            align-self: start
-            padding-bottom: 34px
         &__payment-list
             grid-row: 8
-            grid-column: 1
-            justify-self: start
-            align-self: end
 @media (max-width: 480px)
     .container
         width: 87%
@@ -510,15 +534,9 @@
         &-wrapper
             grid-row-gap: 28px
         &__social
-            &-network
-                flex-wrap: wrap
             &-links
                 margin-top: 22px
                 margin-left: 2px
-        &__title
-            &--inline
-                margin: 0
-                flex-basis: 100%
         &__icon
             &-wrapper
                 margin-left: 2px
