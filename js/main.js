@@ -105,18 +105,32 @@ function removeActiveClass() {
     modalDialog.removeClass('modal__dialog--visible');
   };
 
+  $('[name=phone]').mask('+7 (000) 000-00-00');
+
   //обработка форм
   $(".form").each( function() {
+    if($(this).hasClass('subscribe')) {
+      $(this).validate({
+        errorLabelContainer: $('.subscribe__label-container'),
+        messages: {
+          email: {
+            required: 'This field is required*',
+            email: 'Valid email format name@hostname*'
+          },
+        },
+    });
+    };
     $(this).validate({
       messages: {
         name: {
-          required: 'Обязательное поле*'
+          required: 'This field is required*'
         },
         phone: {
-          required: 'Обязательное поле*'
+          required: 'This field is required*'
         },
         email: {
-          required: 'Обязательное поле*'
+          required: 'This field is required*',
+          email: 'Valid email format name@hostname'
         },
       },
     });

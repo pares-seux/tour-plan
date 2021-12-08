@@ -493,12 +493,13 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form action="send.php" method="POST" class="form subscribe newsletter__subscribe">
-          <div class="subscribe__input-block">
-            <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
+          <div class="subscribe__field-container">
+            <input type="email" name="email" class="subscribe__input" placeholder="Your email address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <button class="subscribe__button button">
+              Send
+            </button>
           </div>
-          <button class="subscribe__button button">
-            Send
-          </button>
+          <div class="subscribe__label-container"></div>
         </form>
       </div>
   </section>
@@ -763,6 +764,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
