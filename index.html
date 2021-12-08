@@ -750,7 +750,7 @@
         <h2 class="modal__title">Booking</h2>
         <form action="send.php" method="POST" class="form modal__form">
           <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*" required minlength="2">
-          <input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*" required pattern="+7 ([0-9]{3})">
+          <input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*" required minlength="18" data-mask="+7 (000) 000-00-00">
           <input type="email" name="email" class="input modal__input" placeholder="Email*" required>
           <textarea name="message" class="message modal__message" placeholder="Message"></textarea>
           <button class="button modal__button" type="submit">Send</button>

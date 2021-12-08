@@ -105,8 +105,6 @@ function removeActiveClass() {
     modalDialog.removeClass('modal__dialog--visible');
   };
 
-  $('[name=phone]').mask('+7 (000) 000-00-00');
-
   //обработка форм
   $(".form").each( function() {
     if($(this).hasClass('subscribe')) {
@@ -128,10 +126,7 @@ function removeActiveClass() {
         },
         phone: {
           required: 'This field is required*',
-          format: {
-            pattern: '+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}', 
-            message: 'Valid phone format +7 (XXX) XXX-XX-XX'
-          }
+          minlength:  'Valid phone format +7 (XXX) XXX-XX-XX*'
         },
         email: {
           required: 'This field is required*',
