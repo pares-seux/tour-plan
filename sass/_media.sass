@@ -204,13 +204,7 @@
             align-self: center
     .modal
         &__dialog
-            padding-left: 44px
-            padding-right: 44px
-    .modal
-        &__dialog
-            width: 80%
-            min-height: auto
-            max-height: 100%
+            width: 60%
 @media (max-width: 750px)
     .navbar
         &__search
@@ -333,6 +327,7 @@
         &-info
             &__description
                 font-size: 12px
+                height: 159px
             &__footer
                 flex-direction: column
             &__priceblock
@@ -380,6 +375,9 @@
             &--inline
                 margin: 0
                 flex-basis: 100%
+    .modal
+        &__dialog
+            width: 70%
 @media (max-width: 576px)
     .stars
         flex-basis: 25%
@@ -462,6 +460,9 @@
             grid-row: 8
         &__payment-list
             grid-row: 8
+    .modal
+        &__dialog
+            width: 80%
 @media (max-width: 480px)
     .container
         width: 87%
@@ -499,6 +500,10 @@
             margin-right: 3px
     .map
         height: 173px
+    .package
+        &-info
+            &__description
+                height: 199px
     .newsletter
         padding: 58px 0 83px 0
         &-wrapper
@@ -574,8 +579,8 @@
             order: 1
     .modal
         &__dialog
-            padding-left: 22px
-            padding-right: 22px
+            margin-left: 22px
+            margin-right: 22px
 @media (max-width: 390px)
     .modal
         &__dialog

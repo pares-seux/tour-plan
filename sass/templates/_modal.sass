@@ -16,11 +16,11 @@
   &__dialog
     position: fixed
     width: 478px
-    min-height: 487px
+    max-height: 90%
+    padding: 33px 88px 0 88px
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    padding: 33px 88px
     background-color: $dark
     color: $light
     border-radius: 8px
@@ -34,6 +34,9 @@
     &--visible
       visibility: visible
       opacity: 1
+  &__container
+    height: 100%
+    margin-bottom: 33px
   &__title
     margin-top: 0
     text-align: center

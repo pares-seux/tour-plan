@@ -1667,12 +1667,12 @@ template {
 .modal__dialog {
   position: fixed;
   width: 478px;
-  min-height: 487px;
+  max-height: 90%;
+  padding: 33px 88px 0 88px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 33px 88px;
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
@@ -1691,6 +1691,11 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+}
+
+.modal__container {
+  height: 100%;
+  margin-bottom: 33px;
 }
 
 .modal__title {
@@ -2053,13 +2058,7 @@ template {
         align-self: center;
   }
   .modal__dialog {
-    padding-left: 44px;
-    padding-right: 44px;
-  }
-  .modal__dialog {
-    width: 80%;
-    min-height: auto;
-    max-height: 100%;
+    width: 60%;
   }
 }
 
@@ -2228,6 +2227,7 @@ template {
   }
   .package-info__description {
     font-size: 12px;
+    height: 159px;
   }
   .package-info__footer {
     -webkit-box-orient: vertical;
@@ -2312,6 +2312,9 @@ template {
     margin: 0;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .modal__dialog {
+    width: 70%;
   }
 }
 
@@ -2446,6 +2449,9 @@ template {
     -ms-grid-row: 8;
     grid-row: 8;
   }
+  .modal__dialog {
+    width: 80%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2498,6 +2504,9 @@ template {
   }
   .map {
     height: 173px;
+  }
+  .package-info__description {
+    height: 199px;
   }
   .newsletter {
     padding: 58px 0 83px 0;
@@ -2604,8 +2613,8 @@ template {
             order: 1;
   }
   .modal__dialog {
-    padding-left: 22px;
-    padding-right: 22px;
+    margin-left: 22px;
+    margin-right: 22px;
   }
 }
 
