@@ -123,10 +123,15 @@ function removeActiveClass() {
     $(this).validate({
       messages: {
         name: {
-          required: 'This field is required*'
+          required: 'This field is required*',
+          name: 'The string length must not be less than 2 characters*'
         },
         phone: {
-          required: 'This field is required*'
+          required: 'This field is required*',
+          format: {
+            pattern: '+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}', 
+            message: 'Valid phone format +7 (XXX) XXX-XX-XX'
+          }
         },
         email: {
           required: 'This field is required*',
@@ -136,5 +141,5 @@ function removeActiveClass() {
     });
   });
 
-  
+  AOS.init();
 });

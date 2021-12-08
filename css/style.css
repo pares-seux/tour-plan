@@ -71,6 +71,10 @@ img {
   font-weight: 400;
   line-height: 18px;
   border: none;
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
