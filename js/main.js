@@ -39,7 +39,6 @@ function moveBg(e) {
 
   if ((newsLetterTop-window.innerHeight<=0) && (newsLetterTop+newsLetterHeight>=0)) {
     newsLetter.style.backgroundPositionY = ((60-0.6*100) + (blockPosition/heightScroll)*100*0.6) + '%'; }
-    console.log(newsLetter.style.backgroundPositionY);
 
 };
 
@@ -52,7 +51,7 @@ menuButton.addEventListener('click', function() {
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
 }, {passive: true});
 
-/*
+
 packagesWrapper.addEventListener('mouseover', function(e) {
   var target = e.target;
   while (!target.classList.contains('package')) {
@@ -69,10 +68,13 @@ packagesWrapper.addEventListener('mouseover', function(e) {
 function removeActiveClass() {
   var oldActiveElement = document.getElementsByClassName('package--active')[0];
 
-  
-  oldActiveElement.childNodes.forEach(element => element.classList.contains("*--active"));
+  console.log(oldActiveElement.childNodes);
+  oldActiveElement.childNodes.forEach(element => {
+    console.log(element.classList); 
+ //   element.classList.contains("*--active");
+});
 //  oldActiveElement.classList.remove('package--active');
-};*/
+};
 
   var modalButton = $('[data-toggle=modal]');
   modalButton.on('click', openModal);
@@ -85,7 +87,6 @@ function removeActiveClass() {
 
   $(document).keyup(function(event) {
      if (event.key === "Escape") { 
-       console.log('нажали');
        closeModal(event);
     }
   });
