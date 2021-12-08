@@ -50,7 +50,7 @@ var packagesWrapper = document.getElementsByClassName('packages-wrapper')[0];
 var menuButton = document.querySelector('.menu-button');
 menuButton.addEventListener('click', function() {
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
-});
+}, {passive: true});
 
 /*
 packagesWrapper.addEventListener('mouseover', function(e) {
