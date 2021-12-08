@@ -51,31 +51,6 @@ menuButton.addEventListener('click', function() {
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
 }, {passive: true});
 
-
-packagesWrapper.addEventListener('mouseover', function(e) {
-  var target = e.target;
-  while (!target.classList.contains('package')) {
-    target = target.parentNode;
-  };
-
-  console.log(target);
-  if (!target.classList.contains('package--active')) {
-    removeActiveClass();
-  };
-  
-});
-
-function removeActiveClass() {
-  var oldActiveElement = document.getElementsByClassName('package--active')[0];
-
-  console.log(oldActiveElement.childNodes);
-  oldActiveElement.childNodes.forEach(element => {
-    console.log(element.classList); 
- //   element.classList.contains("*--active");
-});
-//  oldActiveElement.classList.remove('package--active');
-};
-
   var modalButton = $('[data-toggle=modal]');
   modalButton.on('click', openModal);
   var closeModalButton = $('.modal__close');
