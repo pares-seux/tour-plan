@@ -16,8 +16,10 @@
   &__dialog
     position: fixed
     width: 478px
+    min-height: auto
     max-height: 90%
     padding: 33px 88px 0 88px
+    border-bottom: 33px solid $dark
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
@@ -34,9 +36,6 @@
     &--visible
       visibility: visible
       opacity: 1
-  &__container
-    height: 100%
-    margin-bottom: 33px
   &__title
     margin-top: 0
     text-align: center
@@ -49,6 +48,7 @@
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+
   &__close
     position: absolute
     top: 17px

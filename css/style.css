@@ -1686,8 +1686,10 @@ template {
 .modal__dialog {
   position: fixed;
   width: 478px;
+  min-height: auto;
   max-height: 90%;
   padding: 33px 88px 0 88px;
+  border-bottom: 33px solid #0A223D;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1710,11 +1712,6 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
-}
-
-.modal__container {
-  height: 100%;
-  margin-bottom: 33px;
 }
 
 .modal__title {
@@ -1946,6 +1943,10 @@ template {
   .modal__dialog {
     padding-left: 66px;
     padding-right: 66px;
+  }
+  .modal__form {
+    left: 66px;
+    right: 66px;
   }
 }
 
@@ -2640,8 +2641,12 @@ template {
             order: 1;
   }
   .modal__dialog {
-    margin-left: 22px;
-    margin-right: 22px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .modal__form {
+    left: 22px;
+    right: 22px;
   }
 }
 
