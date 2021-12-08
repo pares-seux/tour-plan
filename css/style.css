@@ -2672,6 +2672,10 @@ template {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
+  .user:hover {
+    color: black;
+    text-decoration: underline;
+  }
   .button:hover {
     background-color: #c71134;
     -webkit-transform: scale(1.05);
