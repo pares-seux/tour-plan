@@ -596,3 +596,30 @@
     .modal
         &__dialog
             width: 96%
+
+@media (min-width: 992px)
+    .logo
+        &:hover
+            transform: scale(1.05)
+    .button
+        &:hover
+            background-color: darken($primary, 10%)
+            transform: scale(1.05)
+    .navbar-menu, .breadcrumb-list
+        &__link
+            &:hover
+                color: darken($light, 20%)
+                text-decoration: underline
+    .footer
+        &__link
+            &:hover
+                color: darken($footer-text-color, 20%)
+                text-decoration: underline
+            &-image
+                &:hover
+                    transform: scale(1.05)
+    .modal
+        &__close
+            &:hover
+                color: darken($light, 20%)
+                transform: scale(1.05)

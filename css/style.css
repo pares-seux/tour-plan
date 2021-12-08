@@ -25,6 +25,11 @@ img {
   color: #ffffff;
 }
 
+.arrow {
+  cursor: pointer;
+  border: none;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -2653,6 +2658,35 @@ template {
 @media (max-width: 390px) {
   .modal__dialog {
     width: 96%;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .button:hover {
+    background-color: #c71134;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .navbar-menu__link:hover, .breadcrumb-list__link:hover {
+    color: #cccccc;
+    text-decoration: underline;
+  }
+  .footer__link:hover {
+    color: #8a8a8a;
+    text-decoration: underline;
+  }
+  .footer__link-image:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .modal__close:hover {
+    color: #cccccc;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 /*# sourceMappingURL=style.css.map */
