@@ -289,15 +289,18 @@
             padding-top: 10px
             &--visible
                 display: block
+                overflow: scroll
+                &::-webkit-scrollbar
+                    width: 0
         &-menu
             flex-direction: column
             &__item
                 line-height: 35px
-
                 &--mobile_visible
                     display: block
                     margin-bottom: 20px
                     padding-bottom: 6px
+
     .user
         &__name
             &--light
