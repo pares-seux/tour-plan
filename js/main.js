@@ -110,5 +110,15 @@ menuButton.addEventListener('click', function() {
     });
   });
 
+  if (window.innerWidth < 992) {
+
+  function removeAos() {
+    var elem = document.getElementById('aos-css-file');
+    elem.parentNode.removeChild(elem);
+    return false;
+  }
+  removeAos();
+
+  }
   AOS.init();
 });
